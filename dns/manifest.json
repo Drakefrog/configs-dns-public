@@ -1,0 +1,600 @@
+{
+  "schema": 1,
+  "semantics": "conservative-direct-domain-projection",
+  "domain_provider": {
+    "behavior": "domain",
+    "format": "text",
+    "path": "direct-domains.domain.txt",
+    "count": 111160
+  },
+  "keyword_review": {
+    "path": "direct-domains.keyword.txt",
+    "count": 0,
+    "included_in_direct_projection": false
+  },
+  "direct_providers": [
+    "icloud",
+    "apple",
+    "direct",
+    "private",
+    "rs-third-party-process-direct"
+  ],
+  "skipped_providers": {
+    "reject": "provider 的路由目标不是全部 DIRECT: REJECT",
+    "google": "provider 的路由目标不是全部 DIRECT: Google",
+    "proxy": "provider 的路由目标不是全部 DIRECT: PROXY",
+    "gfw": "provider 的路由目标不是全部 DIRECT: Google",
+    "greatfire": "provider 的路由目标不是全部 DIRECT: PROXY",
+    "tld-not-cn": "provider 未被 rules 引用",
+    "telegramcidr": "provider 的路由目标不是全部 DIRECT: Telegram",
+    "cncidr": "provider 未被 rules 引用",
+    "lancidr": "provider 未被 rules 引用",
+    "chat-gpt": "provider 的路由目标不是全部 DIRECT: OPENAI",
+    "gemini": "provider 的路由目标不是全部 DIRECT: BARD",
+    "youtube": "provider 的路由目标不是全部 DIRECT: PROXY",
+    "claude": "provider 的路由目标不是全部 DIRECT: OPENAI",
+    "rs-ai-claude-domain": "provider 的路由目标不是全部 DIRECT: OPENAI",
+    "rs-ai-gemini-domain": "provider 的路由目标不是全部 DIRECT: BARD",
+    "rs-ai-gemini-process": "provider 的路由目标不是全部 DIRECT: BARD",
+    "rs-ai-google": "provider 的路由目标不是全部 DIRECT: Google",
+    "rs-ai-microsoft": "provider 的路由目标不是全部 DIRECT: Google",
+    "rs-ai-openai-domain": "provider 的路由目标不是全部 DIRECT: OPENAI",
+    "rs-ai-openai-process": "provider 的路由目标不是全部 DIRECT: OPENAI",
+    "rs-traffic-google-large": "provider 的路由目标不是全部 DIRECT: PROXY",
+    "rs-traffic-hutao-emby": "provider 的路由目标不是全部 DIRECT: Hutao-Emby"
+  },
+  "missing_provider_sources": [],
+  "shadowed_rules": [
+    {
+      "domain": "adservice.google.com",
+      "rule": "direct:adservice.google.com",
+      "blocked_by": "inline:rs-ai-google"
+    },
+    {
+      "domain": "azuremigrate.download.prss.microsoft.com",
+      "rule": "direct:azuremigrate.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "azuremigratetest.download.prss.microsoft.com",
+      "rule": "direct:azuremigratetest.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "azurestackhub.download.prss.microsoft.com",
+      "rule": "direct:azurestackhub.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "azurestackhubuat.download.prss.microsoft.com",
+      "rule": "direct:azurestackhubuat.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "c.android.clients.google.com",
+      "rule": "direct:c.android.clients.google.com",
+      "blocked_by": "inline:rs-ai-google"
+    },
+    {
+      "domain": "cache-management-prod.google.com",
+      "rule": "direct:cache-management-prod.google.com",
+      "blocked_by": "inline:rs-ai-google"
+    },
+    {
+      "domain": "cache.pack.google.com",
+      "rule": "direct:cache.pack.google.com",
+      "blocked_by": "inline:rs-ai-google"
+    },
+    {
+      "domain": "cbdstest.download.prss.microsoft.com",
+      "rule": "direct:cbdstest.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "collaborate.download.prss.microsoft.com",
+      "rule": "direct:collaborate.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "collaborateppe.download.prss.microsoft.com",
+      "rule": "direct:collaborateppe.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "developer.microsoft.com",
+      "rule": "direct:developer.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "dg-meta.video.google.com",
+      "rule": "direct:dg-meta.video.google.com",
+      "blocked_by": "inline:rs-ai-google"
+    },
+    {
+      "domain": "dl.google.com",
+      "rule": "direct:dl.google.com",
+      "blocked_by": "inline:rs-ai-google"
+    },
+    {
+      "domain": "dl.l.google.com",
+      "rule": "direct:dl.l.google.com",
+      "blocked_by": "inline:rs-ai-google"
+    },
+    {
+      "domain": "download.microsoft.com",
+      "rule": "direct:download.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "download.mlcc.google.com",
+      "rule": "direct:download.mlcc.google.com",
+      "blocked_by": "inline:rs-ai-google"
+    },
+    {
+      "domain": "download.tensorflow.google.com",
+      "rule": "direct:download.tensorflow.google.com",
+      "blocked_by": "inline:rs-ai-google"
+    },
+    {
+      "domain": "download.visualstudio.microsoft.com",
+      "rule": "direct:download.visualstudio.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "dreamspark.download.prss.microsoft.com",
+      "rule": "direct:dreamspark.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "dreamsparkuat.download.prss.microsoft.com",
+      "rule": "direct:dreamsparkuat.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "gstaticadssl.l.google.com",
+      "rule": "direct:gstaticadssl.l.google.com",
+      "blocked_by": "inline:rs-ai-google"
+    },
+    {
+      "domain": "itacademy.download.prss.microsoft.com",
+      "rule": "direct:itacademy.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "itacademyuat.download.prss.microsoft.com",
+      "rule": "direct:itacademyuat.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "lex.download.prss.microsoft.com",
+      "rule": "direct:lex.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "lexuat.download.prss.microsoft.com",
+      "rule": "direct:lexuat.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "mbs.download.prss.microsoft.com",
+      "rule": "direct:mbs.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "mpnbenefits.download.prss.microsoft.com",
+      "rule": "direct:mpnbenefits.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "mpnbenefitsrtl.download.prss.microsoft.com",
+      "rule": "direct:mpnbenefitsrtl.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "mpnbenefitsrtluat.download.prss.microsoft.com",
+      "rule": "direct:mpnbenefitsrtluat.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "msdn.download.prss.microsoft.com",
+      "rule": "direct:msdn.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "msdprod-ad.download.prss.microsoft.com",
+      "rule": "direct:msdprod-ad.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "msproduct.download.prss.microsoft.com",
+      "rule": "direct:msproduct.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "myvs.download.prss.microsoft.com",
+      "rule": "direct:myvs.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "oemsoc.download.prss.microsoft.com",
+      "rule": "direct:oemsoc.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "oemsocuat.download.prss.microsoft.com",
+      "rule": "direct:oemsocuat.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "officecdn.microsoft.com",
+      "rule": "direct:officecdn.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "officemkt.download.prss.microsoft.com",
+      "rule": "direct:officemkt.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "officemktuat.download.prss.microsoft.com",
+      "rule": "direct:officemktuat.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "osrelease.download.prss.microsoft.com",
+      "rule": "direct:osrelease.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "pagead-googlehosted.l.google.com",
+      "rule": "direct:pagead-googlehosted.l.google.com",
+      "blocked_by": "inline:rs-ai-google"
+    },
+    {
+      "domain": "pki-goog.l.google.com",
+      "rule": "direct:pki-goog.l.google.com",
+      "blocked_by": "inline:rs-ai-google"
+    },
+    {
+      "domain": "redirector.c.chat.google.com",
+      "rule": "direct:redirector.c.chat.google.com",
+      "blocked_by": "inline:rs-ai-google"
+    },
+    {
+      "domain": "redirector.c.mail.google.com",
+      "rule": "direct:redirector.c.mail.google.com",
+      "blocked_by": "inline:rs-ai-google"
+    },
+    {
+      "domain": "redirector.c.pack.google.com",
+      "rule": "direct:redirector.c.pack.google.com",
+      "blocked_by": "inline:rs-ai-google"
+    },
+    {
+      "domain": "redirector.c.play.google.com",
+      "rule": "direct:redirector.c.play.google.com",
+      "blocked_by": "inline:rs-ai-google"
+    },
+    {
+      "domain": "rsm.download.prss.microsoft.com",
+      "rule": "direct:rsm.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "safebrowsing-cache.google.com",
+      "rule": "direct:safebrowsing-cache.google.com",
+      "blocked_by": "inline:rs-ai-google"
+    },
+    {
+      "domain": "sdx.microsoft.com",
+      "rule": "direct:sdx.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "software.download.prss.microsoft.com",
+      "rule": "direct:software.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "ssl-google-analytics.l.google.com",
+      "rule": "direct:ssl-google-analytics.l.google.com",
+      "blocked_by": "inline:rs-ai-google"
+    },
+    {
+      "domain": "storecorefulfillment.download.prss.microsoft.com",
+      "rule": "direct:storecorefulfillment.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "storeedge.microsoft.com",
+      "rule": "direct:storeedge.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "storeedgefd.dsx.mp.microsoft.com",
+      "rule": "direct:storeedgefd.dsx.mp.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "surface.download.prss.microsoft.com",
+      "rule": "direct:surface.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "surface.downloads.prss.microsoft.com",
+      "rule": "direct:surface.downloads.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "tools.google.com",
+      "rule": "direct:tools.google.com",
+      "blocked_by": "inline:rs-ai-google"
+    },
+    {
+      "domain": "vlportal.download.prss.microsoft.com",
+      "rule": "direct:vlportal.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "volic.download.prss.microsoft.com",
+      "rule": "direct:volic.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "vscode.download.prss.microsoft.com",
+      "rule": "direct:vscode.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "vz.download.prss.microsoft.com",
+      "rule": "direct:vz.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "windbg.download.prss.microsoft.com",
+      "rule": "direct:windbg.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "www-google-analytics.l.google.com",
+      "rule": "direct:www-google-analytics.l.google.com",
+      "blocked_by": "inline:rs-ai-google"
+    },
+    {
+      "domain": "www-googletagmanager.l.google.com",
+      "rule": "direct:www-googletagmanager.l.google.com",
+      "blocked_by": "inline:rs-ai-google"
+    },
+    {
+      "domain": "azuremigrate.download.prss.microsoft.com",
+      "rule": "direct:azuremigrate.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "azuremigratetest.download.prss.microsoft.com",
+      "rule": "direct:azuremigratetest.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "azurestackhub.download.prss.microsoft.com",
+      "rule": "direct:azurestackhub.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "azurestackhubuat.download.prss.microsoft.com",
+      "rule": "direct:azurestackhubuat.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "cbdstest.download.prss.microsoft.com",
+      "rule": "direct:cbdstest.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "collaborate.download.prss.microsoft.com",
+      "rule": "direct:collaborate.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "collaborateppe.download.prss.microsoft.com",
+      "rule": "direct:collaborateppe.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "dcg.microsoft.com",
+      "rule": "direct:dcg.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "dl.delivery.mp.microsoft.com",
+      "rule": "direct:dl.delivery.mp.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "download.microsoft.com",
+      "rule": "direct:download.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "download.visualstudio.microsoft.com",
+      "rule": "direct:download.visualstudio.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "dreamspark.download.prss.microsoft.com",
+      "rule": "direct:dreamspark.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "dreamsparkuat.download.prss.microsoft.com",
+      "rule": "direct:dreamsparkuat.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "itacademy.download.prss.microsoft.com",
+      "rule": "direct:itacademy.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "itacademyuat.download.prss.microsoft.com",
+      "rule": "direct:itacademyuat.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "lanzous.com",
+      "rule": "direct:lanzous.com",
+      "blocked_by": "rules[89]"
+    },
+    {
+      "domain": "larksuite.com",
+      "rule": "direct:larksuite.com",
+      "blocked_by": "rules[38]"
+    },
+    {
+      "domain": "lex.download.prss.microsoft.com",
+      "rule": "direct:lex.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "lexuat.download.prss.microsoft.com",
+      "rule": "direct:lexuat.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "mbs.download.prss.microsoft.com",
+      "rule": "direct:mbs.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "mpnbenefits.download.prss.microsoft.com",
+      "rule": "direct:mpnbenefits.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "mpnbenefitsrtl.download.prss.microsoft.com",
+      "rule": "direct:mpnbenefitsrtl.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "mpnbenefitsrtluat.download.prss.microsoft.com",
+      "rule": "direct:mpnbenefitsrtluat.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "msdn.download.prss.microsoft.com",
+      "rule": "direct:msdn.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "msdprod-ad.download.prss.microsoft.com",
+      "rule": "direct:msdprod-ad.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "msproduct.download.prss.microsoft.com",
+      "rule": "direct:msproduct.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "myvs.download.prss.microsoft.com",
+      "rule": "direct:myvs.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "oemsoc.download.prss.microsoft.com",
+      "rule": "direct:oemsoc.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "oemsocuat.download.prss.microsoft.com",
+      "rule": "direct:oemsocuat.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "officecdn.microsoft.com",
+      "rule": "direct:officecdn.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "officemkt.download.prss.microsoft.com",
+      "rule": "direct:officemkt.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "officemktuat.download.prss.microsoft.com",
+      "rule": "direct:officemktuat.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "osrelease.download.prss.microsoft.com",
+      "rule": "direct:osrelease.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "rsm.download.prss.microsoft.com",
+      "rule": "direct:rsm.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "sdx.microsoft.com",
+      "rule": "direct:sdx.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "software.download.prss.microsoft.com",
+      "rule": "direct:software.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "storecorefulfillment.download.prss.microsoft.com",
+      "rule": "direct:storecorefulfillment.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "storeedge.microsoft.com",
+      "rule": "direct:storeedge.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "surface.download.prss.microsoft.com",
+      "rule": "direct:surface.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "surface.downloads.prss.microsoft.com",
+      "rule": "direct:surface.downloads.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "tiqcdn.com",
+      "rule": "direct:tiqcdn.com",
+      "blocked_by": "rules[79]"
+    },
+    {
+      "domain": "vlportal.download.prss.microsoft.com",
+      "rule": "direct:vlportal.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "volic.download.prss.microsoft.com",
+      "rule": "direct:volic.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "vscode.download.prss.microsoft.com",
+      "rule": "direct:vscode.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "vz.download.prss.microsoft.com",
+      "rule": "direct:vz.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    },
+    {
+      "domain": "windbg.download.prss.microsoft.com",
+      "rule": "direct:windbg.download.prss.microsoft.com",
+      "blocked_by": "inline:rs-ai-microsoft"
+    }
+  ],
+  "warnings": []
+}
